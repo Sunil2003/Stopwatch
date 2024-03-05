@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_div {
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_div {
+    width: 25%;
+    height: auto;
+    border: 2px solid #953333;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 100px;
+    font-size: 75px;
+    padding: 10px 20px;
+}
+
+.btn_container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border: 2px solid #953333;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: aliceblue;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: white;
+        border: 2px solid #eee;
+        transition: all 0.3s linear;
+    }
+}
+
+.btn_container{
+    margin: 0 10px;
+    padding: 0 20px;
+}
+
+.displayTime {
+    color: #fff;
+    font-size: 35px;
+}
+
+
+.div_list{
+    color: white;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 320px) {
+  button{
+    font-size: 15px;
+    border-radius: 40%;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+ .center_div{
+    width: 50%;
+ }
+}
+
+@media screen and (max-width: 500px) {
+ .center_div{
+    width: 75%;
+ }
+}
